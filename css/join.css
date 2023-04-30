@@ -1,0 +1,100 @@
+body {
+  background-color: #fbfbfb;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginbox {
+  width: 352px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.loginbox div {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login {
+  width: 350px;
+  height: 540px;
+  border: 1px solid #dcdcdc;
+}
+
+fieldset {
+  border: none;
+}
+
+#error {
+  height: 10px;
+  color: orange;
+  font-size: small;
+  font-weight: bold;
+}
+.invalid {
+  outline: 2px solid orange !important;
+  border-radius: 0.2em !important;
+}
+
+.login input {
+  width: 268.4px;
+  height: 37.6px;
+  border: 1px solid #dcdcdc;
+  background-color: #fffafa;
+  outline: none;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  padding-left: 10px;
+  color: #c0c0c0;
+  font-size: 13px;
+}
+
+#login-summit {
+  cursor: pointer;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+}
+#login-summit {
+  border: none;
+  border-radius: 10px 10px;
+  background-color: #00bfff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.appstore {
+  width: 134.28px;
+  height: 40px;
+}
+
+.join {
+  padding-top: 10px;
+  width: 350px;
+  height: 63px;
+  border: 1px solid #dcdcdc;
+}
+
+.download {
+  width: 350px;
+  height: 95px;
+}

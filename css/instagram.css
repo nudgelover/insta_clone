@@ -1,0 +1,384 @@
+body {
+  margin: 0;
+  font-family: "Gamja Flower";
+}
+#container {
+  height: 2300px;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 구역2-------------------------------------- */
+#main {
+  margin-top: 1%;
+  margin-left: 30%;
+  margin-right: 2%;
+  width: 473px;
+}
+
+/* 상단 스토리바 */
+.story-id div img,
+.story-id div p,
+.feed div img,
+.feed div p {
+  cursor: pointer;
+}
+
+.story {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px/10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.story-id {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-id div p {
+  margin: 0px;
+  text-align: center;
+}
+
+.story-pic {
+  width: 55px;
+  height: 55px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, red 0%, orange 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.story-pic:hover {
+  transform: rotate(3turn);
+  transition: 4s;
+}
+
+.story-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+  margin: 2.2px;
+}
+
+/* 중간 메인 피드 부분 */
+
+.feed {
+  border-top: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 2500px;
+}
+
+.feed-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed-top > img {
+  margin: 12px;
+}
+
+.feed-top > img:nth-child(3):hover {
+  opacity: 0.5;
+}
+
+.blinking {
+  color: black;
+  font-weight: bold;
+  animation: blink 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.feed-main {
+  position: relative;
+}
+
+.beforeBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.afterBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+
+.feed-main button img {
+  opacity: 0.5;
+  width: 30px;
+}
+
+#mainimg {
+  width: 471.5px;
+  height: 468px;
+}
+#mainimg2 {
+  width: 471.5px;
+  height: 468px;
+}
+
+/* 모달 */
+#moderimg,
+#moderimg2 {
+  width: 600px;
+  height: 600px;
+}
+
+.moder-main {
+  position: relative;
+  width: 600px;
+  height: 650px;
+}
+.moder-main button img {
+  width: 30px;
+  opacity: 50%;
+}
+.modal,
+.modal2 {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 600px;
+  height: 650px;
+  border-radius: 0.5rem;
+}
+
+.close-button,
+.close-button2 {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 10px;
+}
+.close-button:hover,
+.close-button2:hover {
+  color: darkgray;
+}
+
+/* 피드 게시글 부분*/
+
+.feed-mainbar {
+  margin-top: 10px;
+}
+
+.feed-mainbar > img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.feed-mainbar > img:hover {
+  opacity: 0.5;
+}
+
+.feed-mainbottom {
+  margin: 10px;
+}
+
+.feed-comment {
+  display: flex;
+}
+
+#morebtn {
+  margin-left: 10px;
+}
+
+#morebtn2 {
+  margin-left: 10px;
+}
+.feed-comment > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.feed-comment > span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.feed-comment > a {
+  color: gray;
+  text-decoration: none;
+}
+/* ----------- */
+/* 댓글창 부분 */
+/* ----------- */
+.main-icon-like-text-write_commentbox {
+  display: flex;
+}
+
+.userName {
+  font-weight: bold;
+}
+.main-icon-like-text-write-subtext {
+  margin: 0 0 0 10px;
+}
+
+.main_comment_text {
+  width: 390px;
+  border: none;
+  font-family: "Gamja Flower";
+  outline: none;
+}
+
+.main_comment_submit {
+  border: none;
+  background-color: #fff;
+  color: #00bfff;
+  font-family: "Gamja Flower";
+  font-weight: bold;
+}
+
+.main_comment_submit:hover {
+  color: #000080;
+}
+
+#GalleryMore {
+  text-decoration: none;
+  color: #00bfff;
+  font-size: large;
+}
+
+#nomoreimg {
+  padding: 30px;
+  text-align: center;
+}
+
+.sto {
+  margin: 30px;
+  border: none;
+  background-color: white;
+  color: #00bfff;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* 구역3-------------------------------------- */
+
+#sidebar {
+  margin-top: 30px;
+  width: 275px;
+  flex-shrink: 0;
+}
+
+.other-id > img,
+.other-id > div > p:nth-child(1) {
+  cursor: pointer;
+}
+
+.recommand-hello {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.recommand-hello > span:nth-child(2) {
+  color: #3c3c3c;
+  font-size: small;
+}
+.recommand-hello > span:nth-child(2):hover {
+  color: darkgray;
+  cursor: pointer;
+}
+
+.other-id {
+  display: flex;
+}
+
+.recommand > .other-id > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 70%;
+  margin: 5px;
+}
+
+.other-id > div > p {
+  margin: 0px;
+}
+
+.other-id > div > p:nth-child(2) {
+  color: grey;
+  font-size: small;
+  margin-right: 50px;
+}
+
+.other-id > p {
+  color: #00bfff;
+  font-weight: bold;
+  font-size: small;
+}
+
+.other-id > p:hover {
+  color: #000080;
+  cursor: pointer;
+}
+
+.information {
+  width: 265px;
+  margin-top: 20px;
+}
+.information > span {
+  color: #c0c0c0;
+  font-size: 8px;
+}
+.information > p {
+  color: #c0c0c0;
+  font-size: small;
+}
+
+.information > span:nth-child(2n + 1):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

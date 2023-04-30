@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="image/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="image/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="image/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="image/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="image/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="image/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="image/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="image/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="image/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="image/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon/favicon-16x16.png"
+    />
+    <link rel="/manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/instagram.css" />
+    <title>instagram</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nav">
+        <img
+          style="margin: 40px 0px 50px 30px"
+          src="image/instalogo.PNG"
+          width="103px;"
+          height="28px;"
+        />
+        <div class="nav-bar">
+          <img src="image/home.png" />
+          <p><b>홈</b></p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/find.png" />
+          <p>검색</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/navigation.png" />
+          <p>탐색탭</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/video.png" />
+          <p>릴스</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/message.png" />
+          <p>메세지</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/heart.png" />
+          <p>알림</p>
+        </div>
+        <div class="nav-bar" onclick="goToNotice()">
+          <img src="image/notice.png" />
+          <p>게시판</p>
+        </div>
+        <div class="nav-bar" onclick="goToProfile()">
+          <img style="border-radius: 70%" src="image/spring1014.jpg" />
+          <p>프로필</p>
+        </div>
+        <div class="nav-bar" onclick="goToLogin()">
+          <img style="margin-top: 120px" src="image/logout.png" />
+          <p style="margin-top: 125px">로그아웃</p>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="story">
+          <div class="story-id">
+            <div class="story-pic">
+              <img src="image/jennie.PNG" />
+            </div>
+            <div style="z-index: 1; position: absolute">
+              <img
+                style="
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 70%;
+                  margin: 4px;
+                "
+                src="image/jennie.PNG"
+              />
+              <p>jennie_bp</p>
+            </div>
+          </div>
+          <div class="story-id">
+            <div class="story-pic">
+              <img src="image/jisoo.PNG" />
+            </div>
+            <div>
+              <p>jisoo_bp</p>
+            </div>
+          </div>
+          <div class="story-id">
+            <div class="story-pic">
+              <img src="image/rose.PNG" />
+            </div>
+            <div>
+              <p>rose_bp</p>
+            </div>
+          </div>
+          <div class="story-id">
+            <div class="story-pic">
+              <img src="image/risa.PNG" />
+            </div>
+            <div>
+              <p>risa_bp</p>
+            </div>
+          </div>
+          <div class="story-id">
+            <div class="story-pic">
+              <img src="image/iu.PNG" />
+            </div>
+            <div>
+              <p>i_love_u</p>
+            </div>
+          </div>
+          <div class="story-id">
+            <div class="story-pic">
+              <img src="image/suji.png" />
+            </div>
+            <div>
+              <p>suzy_bae</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="feed-top">
+            <img
+              style="border-radius: 70%"
+              src="image/spring1014.jpg"
+              width="30px;"
+              height="30px;"
+            />
+            <a href="spring10_14.html">
+              <p class="blinking">
+                spring10_14 <span style="color: orange">★</span> CLICK!
+              </p></a
+            >
+            <img
+              style="margin-left: 250px"
+              src="image/more.png"
+              width="20px;"
+              height="20px;"
+            />
+          </div>
+          <div class="feed-main">
+            <div>
+              <button class="beforeBtn" onclick="changeGallery(0)">
+                <img src="image/before.png" />
+              </button>
+              <button class="afterBtn" onclick="changeGallery(1)">
+                <img src="image/next.png" />
+              </button>
+            </div>
+            <img id="mainimg" src="image/nudge1.jpg" />
+          </div>
+          <!-- 모달 -->
+          <div class="modal">
+            <div class="modal-content">
+              <div class="moder-main">
+                <span class="close-button">&times;</span>
+                <div>
+                  <button class="beforeBtn" onclick="changeGallery2(0)">
+                    <img src="image/before.png" />
+                  </button>
+                  <button class="afterBtn" onclick="changeGallery2(1)">
+                    <img src="image/next.png" />
+                  </button>
+                </div>
+                <img id="moderimg" src="image/nudge1.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="feed-mainbar">
+            <img
+              id="heart"
+              src="image/heart2.png"
+              data-state="unClick"
+              onclick="javascript:changePic('heart')"
+            />
+            <img src="image/comment.png" />
+            <img src="image/message.png" />
+            <img
+              id="bookmark"
+              style="margin-left: 345px"
+              src="image/bookmark.png"
+              data-state="unClick"
+              onclick="javascript:changePic2('bookmark')"
+            />
+          </div>
+
+          <div class="feed-mainbottom">
+            <p><b>좋아요 422개</b></p>
+
+            <div class="feed-comment">
+              <p><b>spring10_14 </b></p>
+              <span>
+                까꿍 즐거운 월요일이야<span style="color: red">♡</span> 오늘은
+                넛지 아침산책을 시키
+              </span>
+              <a id="morebtn" href="javascript:doDisplay();"> 더보기 </a>
+            </div>
+            <div id="more">
+              <span>
+                고 집으로 들어와서 오늘 아침 막 마켓컬리로 도착한 치킨우유껌을
+                줬어. 근데 이놈이 고기만 발라먹고 우유껌은 안먹지뭐야 ㅠㅅ ㅠ
+                편식쟁이 넛지 바보<br />
+                <br />
+              </span>
+            </div>
+
+            <p style="color: gray; margin: 0">댓글 17개 모두 보기</p>
+
+            <div class="main-icon-like-text-write_commentbox">
+              <span class="userName">nudge1025</span>
+              <p class="main-icon-like-text-write-subtext">
+                엄마 이마트에서 펫밀크 사오세요 - 넛지올림 -
+              </p>
+            </div>
+            <!-- 댓글창구현 -->
+
+            <div class="main-icon-like-text-write_comment"></div>
+
+            <span style="font-size: small">1일전</span>
+          </div>
+
+          <hr />
+          <div class="main_comment" style="display: flex">
+            <img
+              style="margin: 5px 10px"
+              src="image/smlie.png"
+              width="20px"
+              height="20px"
+            />
+            <input
+              class="main_comment_text"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+
+            <button class="main_comment_submit">게시</button>
+          </div>
+          <hr />
+          <div class="feed-top">
+            <img
+              style="border-radius: 70%"
+              src="image/jennie.PNG"
+              width="30px;"
+              height="30px;"
+            />
+            <p>jennie_bp</p>
+            <img
+              style="margin-left: 300px"
+              src="image/more.png"
+              width="20px;"
+              height="20px;"
+            />
+          </div>
+          <div class="feed-main">
+            <video
+              style="object-fit: cover"
+              src="image/choco.mp4"
+              controls
+              loop
+              autoplay
+              muted
+              width="471.5px"
+              height="468px"
+            ></video>
+          </div>
+
+          <div class="feed-mainbar">
+            <img
+              id="heart2"
+              src="image/heart2.png"
+              data-state="unClick"
+              onclick="javascript:changePic('heart2')"
+            />
+            <img src="image/comment.png" />
+            <img src="image/message.png" />
+            <img
+              id="bookmark2"
+              style="margin-left: 345px"
+              src="image/bookmark.png"
+              data-state="unClick"
+              onclick="javascript:changePic2('bookmark2')"
+            />
+          </div>
+
+          <div class="feed-mainbottom">
+            <p><b>좋아요 322개</b></p>
+
+            <div class="feed-comment">
+              <p><b>jennie_bp</b></p>
+              <span>
+                내가 제일 좋아하는 쬬쿄!!! 그중에서도 초코퐁당은 졍말류</span
+              >
+
+              <a id="morebtn2" href="javascript:doDisplay2();"> 더보기</a>
+            </div>
+            <div id="more_2">
+              <span>
+                잊을 수가 없는 맛이야ㅠㅠ 크리스마스 한정 메뉴라는게 아쉬워서
+                눈물이 날 지경이라구!! 사장님 매일매일 만들어주세요!!ㅠㅠㅠ<br />
+                <br />
+              </span>
+            </div>
+
+            <p style="color: gray; margin: 0">댓글 5개 모두 보기</p>
+
+            <div class="main-icon-like-text-write_commentbox">
+              <span class="userName">jisoo_bp</span>
+              <p class="main-icon-like-text-write-subtext">
+                설마 내꺼 포장안한건 아니지?ㅎㅎㅎ
+              </p>
+            </div>
+            <span style="font-size: small">1일전</span>
+          </div>
+
+          <hr />
+          <div class="main_comment" style="display: flex">
+            <img
+              style="margin: 5px 10px"
+              src="image/smlie.png"
+              width="20px"
+              height="20px"
+            />
+            <input
+              class="main_comment_text"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+
+            <button class="main_comment_submit">게시</button>
+          </div>
+          <hr />
+          <div class="feed-top">
+            <img
+              style="border-radius: 70%"
+              src="image/pms.PNG"
+              width="30px;"
+              height="30px;"
+            />
+            <p>myungsoo_park</p>
+            <img
+              style="margin-left: 300px"
+              src="image/more.png"
+              width="20px;"
+              height="20px;"
+            />
+          </div>
+          <div class="feed-main">
+            <div>
+              <button class="beforeBtn" onclick="changeGallery3(0)">
+                <img src="image/before.png" />
+              </button>
+              <button class="afterBtn" onclick="changeGallery3(1)">
+                <img src="image/next.png" />
+              </button>
+            </div>
+            <img id="mainimg2" src="image/pms1.png" />
+          </div>
+          <!-- 모달2-------------------------- -->
+          <div class="modal2">
+            <div class="modal-content">
+              <div class="moder-main">
+                <span class="close-button2">&times;</span>
+                <div>
+                  <button class="beforeBtn" onclick="changeGallery4(0)">
+                    <img src="image/before.png" />
+                  </button>
+                  <button class="afterBtn" onclick="changeGallery4(1)">
+                    <img src="image/next.png" />
+                  </button>
+                </div>
+                <img id="moderimg2" src="image/pms1M.png" />
+              </div>
+            </div>
+          </div>
+          <div class="feed-mainbar">
+            <img
+              id="heart3"
+              src="image/heart2.png"
+              data-state="unClick"
+              onclick="javascript:changePic('heart3')"
+            />
+            <img src="image/comment.png" />
+            <img src="image/message.png" />
+            <img
+              id="bookmark3"
+              style="margin-left: 345px"
+              src="image/bookmark.png"
+              data-state="unClick"
+              onclick="javascript:changePic2('bookmark3')"
+            />
+          </div>
+
+          <div class="feed-mainbottom">
+            <p><b>좋아요 20000개</b></p>
+
+            <div class="feed-comment">
+              <p><b>myungsoo_park</b></p>
+              <span> 아 퇴근 마렵다. 퇴사할까?</span>
+            </div>
+
+            <p style="color: gray; margin: 0">댓글 4개 모두 보기</p>
+
+            <div class="main-icon-like-text-write_commentbox">
+              <span class="userName">kb_card</span>
+              <p class="main-icon-like-text-write-subtext">
+                안녕하십니까 박명수 고객님, 02월25일 2,258,700원 결제예정입니다.
+                리볼빙하시겠습니까?
+              </p>
+            </div>
+            <div class="main-icon-like-text-write_commentbox">
+              <span class="userName">hd_card</span>
+              <p class="main-icon-like-text-write-subtext">
+                안녕하세요 박명수 고객님, 02월12일 1,328,700원 결제예정이십니다.
+              </p>
+            </div>
+            <div class="main-icon-like-text-write_commentbox">
+              <span class="userName">kb_bank</span>
+              <p class="main-icon-like-text-write-subtext">
+                고객님, 금리 변동주기가 도달하여 익일부터 6개월변동 6.66%
+                적용예정이십니다.
+              </p>
+            </div>
+            <div class="main-icon-like-text-write_commentbox">
+              <span class="userName">myungsoo_park</span>
+              <p class="main-icon-like-text-write-subtext">ㅈㅅ</p>
+            </div>
+
+            <span style="font-size: small">1일전</span>
+          </div>
+
+          <hr />
+          <div class="main_comment" style="display: flex">
+            <img
+              style="margin: 5px 10px"
+              src="image/smlie.png"
+              width="20px"
+              height="20px"
+            />
+            <input
+              class="main_comment_text"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+
+            <button class="main_comment_submit">게시</button>
+          </div>
+          <hr />
+          <br />
+        </div>
+        <div style="height: 300px">
+          <div style="margin-left: 200px">
+            <a id="GalleryMore" href="javascript:GalleryUpload();"
+              >게시물 더보기</a
+            >
+          </div>
+          <div id="nomoreimg">
+            <img src="image/allchecked.png" width="95px;" height="95px;" />
+            <p style="font-size: large">모두 확인했습니다</p>
+            <p style="color: grey; font-size: small">
+              최근 3일 동안 새롭게 올라온 게시물을 모두 확인했습니다.
+            </p>
+
+            <button class="sto" onclick="sTo()">위로 가기</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="sidebar">
+        <div class="other-id">
+          <img
+            style="border-radius: 70%"
+            src="image/nudge2.PNG"
+            width="55px"
+            height="55px"
+          />
+          <div style="margin: 10px 100px 10px 10px">
+            <p><b>nudge1025</b></p>
+            <p style="color: gray">김넛지</p>
+          </div>
+          <p>전환</p>
+        </div>
+
+        <div class="recommand">
+          <div class="recommand-hello">
+            <span style="color: gray"><b>회원님을 위한 추천</b></span>
+            <span><b>모두보기</b></span>
+          </div>
+          <div class="other-id">
+            <img src="image/younho.PNG" />
+            <div>
+              <p><b>yunho_jung</b></p>
+              <p>김넛지님 외 9명이 팔로우합니다</p>
+            </div>
+            <p>팔로우</p>
+          </div>
+          <div class="other-id">
+            <img src="image/changmin.PNG" />
+            <div>
+              <p><b>changmin_sim</b></p>
+              <p>김넛지님 외 9명이 팔로우합니다</p>
+            </div>
+            <p>팔로우</p>
+          </div>
+          <div class="other-id">
+            <img src="image/jpy.jpg" />
+            <div>
+              <p><b>king_jyp</b></p>
+              <p>김넛지님 외 5명이 팔로우합니다</p>
+            </div>
+            <p>팔로우</p>
+          </div>
+          <div class="other-id">
+            <img src="image/pms.PNG" />
+            <div>
+              <p><b>myungsoo_park</b></p>
+              <p>김넛지님 외 3명이 팔로우합니다</p>
+            </div>
+            <p>팔로우</p>
+          </div>
+          <div class="other-id">
+            <img src="image/simpsons.PNG" />
+            <div>
+              <p><b>simpsons</b></p>
+              <p>김넛지님 외 4명이 팔로우합니다</p>
+            </div>
+            <p>팔로우</p>
+          </div>
+          <div class="information">
+            <span>소개</span>
+            <span>&middot;</span>
+            <span>도움말</span>
+            <span>&middot;</span>
+            <span>홍보 센터</span>
+            <span>&middot;</span>
+            <span>API채용정보</span>
+            <span>&middot;</span>
+            <span>개인정보처리방침</span>
+            <span>&middot;</span>
+            <span>약관</span>
+            <span>&middot;</span>
+            <span>위치</span>
+            <span>&middot;</span>
+            <span>언어</span>
+
+            <p>© 2023 INSTAGRAM FROM META</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/instagram.js"></script>
+  </body>
+</html>

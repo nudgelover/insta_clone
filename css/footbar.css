@@ -1,0 +1,12 @@
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bottom span {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: gray;
+  cursor: pointer;
+  font-size: 11px;
+}

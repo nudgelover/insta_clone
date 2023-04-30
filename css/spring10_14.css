@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: "Gamja Flower", cursive;
+}
+#container {
+  height: 1300px;
+  display: flex;
+}
+
+/* -----------main----------------------- */
+
+#main {
+  width: 1200px;
+  margin-left: 250px;
+}
+header {
+  width: 100%;
+  height: 200px;
+}
+header > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  overflow: hidden;
+  padding: 5% 10%;
+  width: 90%;
+}
+
+section > div {
+  width: 27%;
+  margin: 1.3%;
+  height: 250px;
+  float: left;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section > div > img,
+section > div > video {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+section > div > img:hover,
+section > div > video:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  section > div {
+    width: 31%;
+  }
+}
+
+@media (max-width: 480px) {
+  section > div {
+    width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  section > div {
+    width: 60%;
+  }
+}

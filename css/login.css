@@ -1,0 +1,112 @@
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+p {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+.slide_item {
+  width: 250px;
+  height: 541px;
+  position: absolute;
+  top: 25px;
+  left: 157px;
+  animation: imgchange 10s linear infinite;
+}
+
+@keyframes imgchange {
+  0% {
+    background-image: url("image/screenshot1.png");
+  }
+  25% {
+    background-image: url("image/screenshot2.png");
+  }
+  50% {
+    background-image: url("image/screenshot3.png");
+  }
+  75% {
+    background-image: url("image/screenshot4.png");
+  }
+  100% {
+    background-image: url("image/screenshot1.png");
+  }
+}
+
+.loginbox div {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login {
+  width: 350px;
+  height: 390px;
+  border: 1px solid #dcdcdc;
+}
+
+fieldset {
+  border: none;
+}
+
+#error {
+  height: 15px;
+  color: orange;
+  font-size: small;
+  font-weight: bold;
+}
+.invalid {
+  outline: 2px solid orange !important;
+  border-radius: 0.2em !important;
+}
+
+.login input {
+  width: 268.4px;
+  height: 37.6px;
+  background-color: #fffafa;
+  border: 1px solid #dcdcdc;
+}
+
+#userid,
+#userpassword {
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  padding-left: 10px;
+  color: #c0c0c0;
+  font-size: 13px;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+}
+#login-summit {
+  border: none;
+  border-radius: 10px 10px;
+  background-color: #00bfff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.appstore {
+  width: 134.28px;
+  height: 40px;
+}
+
+.join {
+  padding-top: 10px;
+  width: 350px;
+  height: 63px;
+  border: 1px solid #dcdcdc;
+}
+
+.download {
+  width: 350px;
+  height: 95px;
+}

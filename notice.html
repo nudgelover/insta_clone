@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="image/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="image/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="image/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="image/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="image/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="image/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="image/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="image/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="image/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="image/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon/favicon-16x16.png"
+    />
+    <link rel="/manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/notice.css" />
+    <link rel="stylesheet" href="css/footbar.css" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/instagram.js"></script>
+    <title>instagram</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nav">
+        <img
+          style="margin: 40px 0px 50px 30px"
+          src="image/instalogo.PNG"
+          width="103px;"
+          height="28px;"
+        />
+        <div class="nav-bar" onclick="goToMain()">
+          <img src="image/home.png" />
+          <p><b>홈</b></p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/find.png" />
+          <p>검색</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/navigation.png" />
+          <p>탐색탭</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/video.png" />
+          <p>릴스</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/message.png" />
+          <p>메세지</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/heart.png" />
+          <p>알림</p>
+        </div>
+        <div class="nav-bar">
+          <img src="image/notice.png" />
+          <p>게시판</p>
+        </div>
+        <div class="nav-bar" onclick="goToProfile()">
+          <img style="border-radius: 70%" src="image/spring1014.jpg" />
+          <p>프로필</p>
+        </div>
+        <div class="nav-bar" onclick="goToLogin()">
+          <img style="margin-top: 120px" src="image/logout.png" />
+          <p style="margin-top: 125px">로그아웃</p>
+        </div>
+      </div>
+
+      <div id="notice_wrap">
+        <img class="popup" src="image/popup.png" alt="공지사항" />
+        <p class="closeWrap">
+          <input type="checkbox" name="expiresChk" id="expiresChk" />
+          <label for="expiresChk">3일 동안 이 창 열지않기</label>
+          <button class="closeBtn">닫기</button>
+        </p>
+      </div>
+
+      <div id="notice_board">
+        <header>
+          <img src="image/insta3.png" />
+          <div style="margin-top: 40px; width: 500px">
+            <h1>Instagram FAQ</h1>
+            <h3>긴급 공지와 자주 묻는 질문(FAQ) 전용 게시판입니다.</h3>
+            <p>
+              <span style="color: orange; font-weight: bold">1:1 문의</span>는
+              Q&A 챗봇을 이용 부탁드립니다.
+              <span style="color: orange; font-weight: bold">우측 하단</span>의
+              <span style="color: orange; font-weight: bold">챗봇 나리</span>를
+              클릭해주세요!
+            </p>
+            <p style="color: red; font-weight: bold">
+              계정 해킹 등 긴급문의는 전용 콜센터로 연락부탁드립니다.
+            </p>
+            <p style="font-size: 20px">
+              긴급문의 전용 콜센터 :
+              <span style="font-weight: bold">080-1588-8282</span>
+            </p>
+          </div>
+        </header>
+        <hr />
+        <section>
+          <div
+            style="
+              font-size: 23px;
+              font-weight: bold;
+              margin: 40px 0 10px 70px;
+              display: flex;
+            "
+          >
+            <img
+              style="margin: 0 10px"
+              src="image/ask-for-help.png"
+              width="35px"
+            />자주 묻는 질문(FAQ)
+          </div>
+          <div style="display: inline-flex; margin-left: 400px">
+            <div>
+              <input
+                id="filterText"
+                type="search"
+                placeholder="키워드를 입력해주세요"
+              />
+              <br />
+              <div class="filterUL">
+                <ul>
+                  <li>아이디 찾기</li>
+                  <li>비밀번호 찾기</li>
+                  <li>2단계 인증</li>
+                  <li>해외 차단</li>
+                  <li>계정 차단</li>
+                  <li>계정 비공개 전환</li>
+                  <li>계정 탈퇴</li>
+                  <li>좋아요</li>
+                  <li>알림</li>
+                  <li>페이스북</li>
+                </ul>
+              </div>
+            </div>
+            <button style="cursor: pointer; width: 30px; height: 30px">
+              <img
+                style="width: 15px"
+                src="https://cdn-icons-png.flaticon.com/512/149/149852.png"
+              />
+            </button>
+          </div>
+          <table>
+            <colgroup>
+              <col width="100px;" />
+              <col width="400px;" />
+              <col width="200px;" />
+              <col width="200px;" />
+              <col width="200px;" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">순서</th>
+                <th scope="col">제목</th>
+                <th scope="col">작성일</th>
+                <th scope="col">작성자</th>
+                <th scope="col">조회수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="icon">
+                    <img src="image/new.png" />아이디를 잊어버렸습니다. 어떻게
+                    찾을 수 있나요?
+                  </div>
+                </td>
+                <td>2023/02/15</td>
+                <td>관리자</td>
+                <td>1,038</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <div class="icon">
+                    <img src="image/new.png" />비밀번호를 잊어버렸습니다. 어떻게
+                    찾을 수 있나요?
+                  </div>
+                </td>
+                <td>2023/02/15</td>
+                <td>관리자</td>
+                <td>1,430</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>원치 않는 계정을 차단할 수 있나요?</td>
+                <td>2023/02/10</td>
+                <td>관리자</td>
+                <td>903</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>좋아요 또는 댓글기능을 막고 싶습니다.</td>
+                <td>2023/02/08</td>
+                <td>관리자</td>
+                <td>1,538</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>계정을 비공개로 전환할 수 있나요?</td>
+                <td>2023/02/01</td>
+                <td>관리자</td>
+                <td>1,238</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <div class="icon">
+                    <img src="image/important2.png" />
+                    2단계 인증은 어떻게 등록하나요?
+                  </div>
+                </td>
+                <td>2023/01/25</td>
+                <td>관리자</td>
+                <td>1,038</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>
+                  <div class="icon">
+                    <img src="image/important2.png" />해외에서 접속을 차단할 수
+                    있나요?
+                  </div>
+                </td>
+                <td>2023/01/20</td>
+                <td>관리자</td>
+                <td>502</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>알림 설정이 가능한가요?</td>
+                <td>2023/1/13</td>
+                <td>관리자</td>
+                <td>728</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>페이스북과 연동(해지)을 하고 싶습니다.</td>
+                <td>2023/1/05</td>
+                <td>관리자</td>
+                <td>838</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>계정 탈퇴를 하고 싶습니다.</td>
+                <td>2023/01/03</td>
+                <td>관리자</td>
+                <td>938</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="float: right; cursor: pointer">
+            <img
+              style="
+                width: 80px;
+                z-index: 1;
+                position: fixed;
+                bottom: 141px;
+                right: 105px;
+              "
+              src="image/eys.gif"
+            />
+            <img
+              style="
+                width: 150px;
+                z-index: 0;
+                position: fixed;
+                bottom: 70px;
+                right: 70px;
+              "
+              src="image/chatbot.svg"
+            />
+          </div>
+          <div class="index">[1] [2] [3]</div>
+        </section>
+
+        <footer>
+          <div class="bottom">
+            <span>Meta</span>
+            <span>소개</span>
+            <span>블로그</span>
+            <span>채용 정보</span>
+            <span>도움말</span>
+            <span>API</span>
+            <span>개인정보처리방침</span>
+            <span>약관</span>
+            <span>인기 계정</span>
+            <span>위치</span>
+            <span>Instagram Lite</span>
+            <span>연락처 업로드 & 비사용자</span>
+          </div>
+          <div class="bottom">
+            <span>한국어</span>
+            <span>© 2023 Instagram from Meta</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+        $('td:nth-child(2)').on('click', function () {
+          $('td:nth-child(2)').css({'font-weight': 'normal', color: '#666'}); //누르지 않은 거
+          $(this).css({'font-weight': 'bold', color: 'orange'}); //클릭한 거
+        });
+      });
+
+      // 쿠키 팝업창
+      $(function () {
+        if ($.cookie('popup') == 'none') {
+          $('#notice_wrap').hide();
+        }
+
+        var $expChk = $('#expiresChk');
+        $('.closeBtn').on('click', closePop);
+
+        function closePop() {
+          if ($expChk.is(':checked')) {
+            $.cookie('popup', 'none', {expires: 3, path: '/'}); //3일 후 자동 소멸, path는 최상위 폴더에 저장
+          }
+          $('#notice_wrap').fadeOut('fast');
+        }
+      });
+
+      $(function () {
+        $('#filterText').keyup(function () {
+          let keyword = $(this).val(); //.val 요소의 value를 가져옴
+          if (keyword !== '') {
+            $('.filterUL li').hide();
+            $(".filterUL li:contains('" + keyword + "')").show();
+            $('.filterUL').show();
+          } else {
+            $('.filterUL li').hide();
+            $('.filterUL').hide();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

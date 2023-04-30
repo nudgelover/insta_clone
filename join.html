@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="image/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="image/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="image/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="image/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="image/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="image/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="image/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="image/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="image/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="image/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>join</title>
+    <link rel="stylesheet" href="css/join.css" />
+    <link rel="stylesheet" href="css/footbar.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="loginbox">
+        <div class="login">
+          <img
+            style="margin-top: 35px; margin-bottom: 10px; width: 174px"
+            src="image/insta.jpg"
+          />
+          <p style="color: gray; font-weight: bold">
+            친구들의 사진과 동영상을 보려면 가입하세요.
+          </p>
+          <a
+            href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522383xnp7c99571ej5eqx1jb1rp1307bl9hwqe6jeaiir1s0tnrk%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dko_KR%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D8da2be1b-8c06-450a-9f1d-ed38c7e39e74%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522383xnp7c99571ej5eqx1jb1rp1307bl9hwqe6jeaiir1s0tnrk%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
+          >
+            <button
+              style="
+                margin: 10px;
+                border: none;
+                background-color: #4f67b0;
+                width: 268px;
+                height: 40px;
+                border-radius: 0.5em;
+                cursor: pointer;
+              "
+            >
+              <img
+                style="width: 14px"
+                src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png"
+              />
+              <span style="color: white; font-size: 14px; font-weight: bold"
+                >Facebook으로 로그인</span
+              >
+            </button></a
+          >
+
+          <div class="or">
+            <img src="image/line.PNG" width="100px" height="20px" />
+            <p
+              style="
+                margin: 0 20px 20px 20px;
+                color: gray;
+                font-size: small;
+                font-weight: bold;
+              "
+            >
+              또는
+            </p>
+            <img src="image/line.PNG" width="100px" height="20px" />
+          </div>
+
+          <form>
+            <fieldset>
+              <div id="error"></div>
+              <input
+                type="text"
+                id="useremail"
+                placeholder="이메일 주소"
+                required
+                autofocus
+              />
+              <input
+                type="text"
+                id="username"
+                placeholder="성명"
+                required
+                autofocus
+              />
+              <input
+                type="text"
+                id="userid"
+                placeholder="사용자 이름"
+                required
+                autofocus
+              />
+              <input
+                type="password"
+                id="userpassword"
+                placeholder="비밀번호"
+                required
+              />
+
+              <input
+                id="login-summit"
+                type="submit"
+                value="가입"
+                onclick="join()"
+              />
+            </fieldset>
+          </form>
+        </div>
+        <div class="join">
+          <p>
+            계정이 있으신가요?
+            <a href="login.html"
+              ><span style="color: #00bfff; font-weight: bold">로그인</span>
+            </a>
+          </p>
+        </div>
+        <div class="download">
+          <p>앱을 다운로드하세요.</p>
+          <a
+            aria-label="Google Play에서 다운로드"
+            href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DAC738836-A9FB-4F72-9456-9962E2FF99ED%26utm_content%3Dlo%26utm_medium%3Dbadge"
+            target="_blank"
+            ><img
+              alt="Google Play에서 다운로드"
+              class="appstore"
+              src="https://static.cdninstagram.com/rsrc.php/v3/ye/r/UtJtFmFLCiD.png"
+            />
+          </a>
+
+          <a
+            aria-label="Microsoft에서 다운로드"
+            href="ms-windows-store://pdp/?productid=9nblggh5l9xt&amp;referrer=appbadge&amp;source=www.instagram.com&amp;mode=mini&amp;pos=0%2C0%2C1920%2C1030"
+            ><img
+              alt="Microsoft에서 다운로드"
+              class="appstore"
+              src="https://static.cdninstagram.com/rsrc.php/v3/yw/r/LBxTdceDfgS.png"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="bottom">
+        <span>Meta</span>
+        <span>소개</span>
+        <span>블로그</span>
+        <span>채용 정보</span>
+        <span>도움말</span>
+        <span>API</span>
+        <span>개인정보처리방침</span>
+        <span>약관</span>
+        <span>인기 계정</span>
+        <span>위치</span>
+        <span>Instagram Lite</span>
+        <span>연락처 업로드 & 비사용자</span>
+      </div>
+      <div class="bottom">
+        <span>한국어</span>
+        <span>© 2023 Instagram from Meta</span>
+      </div>
+    </div>
+    <script>
+      useremail.onblur = function () {
+        if (!useremail.value.includes("@")) {
+          useremail.classList.add("invalid");
+          error.innerHTML = "이메일(@)을 입력해주세요.";
+        } else {
+          this.classList.remove("invalid");
+        }
+      };
+      useremail.onfocus = function () {
+        if (this.classList.contains("invalid")) {
+          // 사용자가 새로운 값을 입력하려고 하므로 에러 메시지를 지움
+          this.classList.remove("invalid");
+          error.innerHTML = "";
+        }
+      };
+
+      function join() {
+        let email = document.getElementById("useremail");
+        let name = document.getElementById("username");
+        let id = document.getElementById("userid");
+        let password = document.getElementById("userpassword");
+
+        if (!email.value || !name.value || !id.value || !password.value) {
+          alert("빈칸을 모두 채워주세요.");
+        } else {
+          alert(name.value + "님 Instagram에 가입하신 것을 환영합니다!");
+        }
+      }
+    </script>
+  </body>
+</html>
